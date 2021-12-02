@@ -15,22 +15,30 @@ function selectionSortRecursive(arr) {
 if (require.main === module) {
   // add your own tests in here
   console.log("Expecting: [-1, 2, 3, 5]");
+  console.time("runtime");
   console.log(selectionSortRecursive([3, -1, 5, 2]));
+  console.timeEnd("runtime");
 
   console.log("");
 
   console.log("Expecting: [5]");
+  console.time("runtime");
   console.log(selectionSortRecursive([5]));
+  console.timeEnd("runtime");
 
   console.log("");
 
   console.log("Expecting: [-1, 2, 2, 3, 3, 5]");
+  console.time("runtime");
   console.log(selectionSortRecursive([3, 2, -1, 3, 5, 2]));
+  console.timeEnd("runtime");
 
   console.log("");
 
   console.log("Expecting: [3, 5]");
+  console.time("runtime");
   console.log(selectionSortRecursive([5, 3]));
+  console.timeEnd("runtime");
 
   console.log("");
 }
